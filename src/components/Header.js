@@ -1,4 +1,5 @@
 import React from "react";
+import { FaShoppingBasket } from 'react-icons/fa'
 
 export default function Header() {
   return (
@@ -8,6 +9,7 @@ export default function Header() {
           <div className="navigation">
             <a href="#" className="navigation__logo">Happy Toys!</a>
             <div className="navigation__list">
+              <FaShoppingBasket className="navigation__shoppin" />
               <a href="#">Новинки</a>
               <a href="#">Магазин</a>
               <a href="#">Знижки</a>

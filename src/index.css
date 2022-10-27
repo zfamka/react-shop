@@ -60,6 +60,15 @@ header .navigation__list a:hover {
   opacity: 0.5;
 }
 
+header .navigation__shoppin {
+  margin-right: 20px;
+  transition: opacity 500ms linear;
+}
+
+header .navigation__shoppin:hover {
+    opacity: 0.5;
+}
+
 header .presentation {
   user-select: none;
   display: flex;
@@ -86,6 +95,12 @@ header .presentation a{
   text-decoration: none;
   text-align: center;
   letter-spacing: 5px;
+  transition: 200ms linear; 
+  border-radius: 5px;
+}
+
+header .presentation a:hover{
+  background-color: #70b903;
 }
 
 .description {
