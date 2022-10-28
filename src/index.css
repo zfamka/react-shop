@@ -38,6 +38,7 @@ header .fullwidth__containter:first-child {
 }
 
 header .navigation {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,11 +63,30 @@ header .navigation__list a:hover {
 
 header .navigation__shoppin {
   margin-right: 20px;
-  transition: opacity 500ms linear;
+  transition: 300ms linear;
 }
 
 header .navigation__shoppin:hover {
-    opacity: 0.5;
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+header .navigation__shoppin.active {  
+  color: red;
+  transform: scale(1.5);
+}
+
+header .navigation__shoplist {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 450px;
+  min-height: 100px;
+  background-color: #fafafa;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 4px 5px 15px -7px #606060; 
+  z-index: 1000; 
 }
 
 header .presentation {

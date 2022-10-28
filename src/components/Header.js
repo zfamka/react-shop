@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from 'react';
 import { FaShoppingBasket } from 'react-icons/fa'
 
 export default function Header() {
+  let [cartOpen, setCartOpen] = useState(false);
+
   return (
     <header>
       <div className="fullwidth__containter">
@@ -9,7 +11,12 @@ export default function Header() {
           <div className="navigation">
             <a href="#" className="navigation__logo">Happy Toys!</a>
             <div className="navigation__list">
-              <FaShoppingBasket className="navigation__shoppin" />
+              <FaShoppingBasket className={`navigation__shoppin ${cartOpen && 'active'}`} onClick={() => setCartOpen(cartOpen = !cartOpen)} />
+
+              {cartOpen && (
+                <div className='navigation__shoplist'></div>
+              )}
+
               <a href="#">Новинки</a>
               <a href="#">Магазин</a>
               <a href="#">Знижки</a>
