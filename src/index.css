@@ -81,7 +81,7 @@ header .navigation__shoplist {
   top: 50px;
   right: 0;
   width: 450px;
-  min-height: 100px;
+  padding: 10px;
   background-color: #fafafa;
   border: 2px solid black;
   border-radius: 5px;
@@ -121,6 +121,48 @@ header .presentation a{
 
 header .presentation a:hover{
   background-color: #70b903;
+}
+
+header .navigation__shoplist .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: black;
+}
+
+header .navigation__shoplist .item img{
+  width: 70px;
+  margin: 5px 10px;
+}
+
+header .navigation__shoplist .item b{
+  margin-right: 40px;
+}
+
+main h2{
+  margin: 10px 0;
+}
+
+.item b {
+  margin: 20px 0;
+}
+
+header .empty h2 {
+  color: black;
+}
+
+.add-to-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(153, 35, 35);
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  color: white;
+  margin: 10px auto 0;
+  cursor: pointer;
 }
 
 .description {
