@@ -129,15 +129,18 @@ header .navigation__shoplist .item {
   align-items: center;
   width: 100%;
   color: black;
+  text-align: center;
 }
 
+
+
 header .navigation__shoplist .item img{
-  width: 70px;
+  width: 20%;
   margin: 5px 10px;
 }
 
-header .navigation__shoplist .item b{
-  margin-right: 40px;
+header .item__delete{
+  margin-right: 20px;
 }
 
 main h2{
@@ -184,4 +187,9 @@ main div {
 
 main div img {
   width: 400px;
+}
+
+.sum {
+  color: black;
+  margin: 10px;
 }
